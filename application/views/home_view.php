@@ -834,7 +834,7 @@ Bạn không có mục nào trong giỏ hàng            </div>
                    <a style="display: block;" class="nivo-imageLink" href="http://fptshop.com.vn/samsung-galaxy-tab-2-p3110-7-inch" target="_parent" rel="nofollow"><img style="display: none;" src="<?php echo $public_folder.'img/0018805_p3110-.jpg';?>" alt="P3110 |" rel="P3110 |"></a>
                     <a style="display: none;" class="nivo-imageLink" href="http://fptshop.com.vn/khuyen-mai/nha-bao" target="_black" rel="nofollow"><img style="display: none;" src="<?php echo $public_folder.'img/0019323_2106-.png';?>" alt="21/06 |" rel="21/06 |"></a>
                     <a style="display: none;" class="nivo-imageLink" href="http://fptshop.com.vn/samsung-galaxy-camera-gc100" target="_black" rel="nofollow"><img style="display: none;" src="<?php echo $public_folder.'img/0018818_g100-.png';?>" alt="G100 | " rel="G100 | "></a>
-                    <a style="display: none;" class="nivo-imageLink" href="http://fptshop.com.vn/giam-3-cho-chu-the-agribank-khi-mua-hang-tai-fpt-shop" target="_parent" rel="nofollow"><img style="display: none;" src="<?php echo $public_folder.'/0018504_argibank.png';?>" alt="Argibank" rel="Argibank"></a>
+                    <a style="display: none;" class="nivo-imageLink" href="http://fptshop.com.vn/giam-3-cho-chu-the-agribank-khi-mua-hang-tai-fpt-shop" target="_parent" rel="nofollow"><img style="display: none;" src="<?php echo $public_folder.'img/0018504_argibank.png';?>" alt="Argibank" rel="Argibank"></a>
 </div>       
 <script type="text/javascript">
     $(function () {
