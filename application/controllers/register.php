@@ -1,7 +1,27 @@
 <?php
-	class Register extends CI_Controller{
-		public function index(){
-			$this->load->view('register_view');
-		}
-	}
+
+class Register extends CI_Controller {
+
+    public function index() {
+
+        if (!empty($_POST)) {
+            if ($_POST['Email'] != null && $_POST['Password'] != null && $_POST['FirstName'] != null && $_POST['Phone'] != null && $_POST['StreetAddress'] != null && $_POST['StateProvinceId'] != null && $district_id = $_POST['FrtDistrictId'] != null) {
+                $email = $_POST['Email'];
+                $password = $_POST['Password'];
+                $full_name = $_POST['FirstName'];
+                $phone = $_POST['Phone'];
+                $street_address = $_POST['StreetAddress'];
+                $city_id = $_POST['StateProvinceId'];
+                $district_id = $_POST['FrtDistrictId'];
+                echo $email;
+            } else {
+                $this->load->view('register_view');
+            }
+        } else {
+            $this->load->view('register_view');
+        }
+    }
+
+}
+
 ?>

@@ -143,7 +143,7 @@
        
                         });
                     </script>
-                    <form novalidate="novalidate" action="/dang-ky" method="post"><input name="__RequestVerificationToken" value="VcCH2afm0XYfUyKHkXnx8kAh8gSJNBEaTRO2wl+mmmZ86FUTGjLaJK/YUopEEz6FKDWQ2s4iyi65TKBKIz6oOakEJDYk2VvurVIBZPFXFjkzmVZn9GaoQSGTeK2H1kZxB8puTYG+s95qmsa240f5mQk1TSveq14pw3LOF71KQ5I=" type="hidden">        <div>
+                    <form novalidate="novalidate" method="post"><input name="__RequestVerificationToken" value="VcCH2afm0XYfUyKHkXnx8kAh8gSJNBEaTRO2wl+mmmZ86FUTGjLaJK/YUopEEz6FKDWQ2s4iyi65TKBKIz6oOakEJDYk2VvurVIBZPFXFjkzmVZn9GaoQSGTeK2H1kZxB8puTYG+s95qmsa240f5mQk1TSveq14pw3LOF71KQ5I=" type="hidden">        <div>
                             <div class="logoregister"></div>
                             <!-- <div class="message-error">
                                      Html.ValidationSummary(true)
