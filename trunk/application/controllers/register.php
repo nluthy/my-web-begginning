@@ -1,7 +1,10 @@
 <?php
 
 class Register extends CI_Controller {
-
+    public function __construct() {
+        parent::__construct();
+        $this->load->helper('url');
+    }
     public function index() {
 
         if (!empty($_POST)) {
@@ -13,7 +16,8 @@ class Register extends CI_Controller {
                 $street_address = $_POST['StreetAddress'];
                 $city_id = $_POST['StateProvinceId'];
                 $district_id = $_POST['FrtDistrictId'];
-                $password = sha1($password);
+                $password = strtoupper(sha1($password));
+                
                 echo $email.$password;
             } else {
                 $this->load->view('register_view');

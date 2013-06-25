@@ -15,12 +15,7 @@
         <meta name="revisit-after" content="1 days">
         <meta name="GENERATOR" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT">
 
-        <?php
-        $public_folder = 'http://localhost:81/CodeIgniterBeginning/public/';
-        $root_link = 'http://localhost:81/CodeIgniterBeginning/index.php/';
-        ?>
-
-        <script src="<?php echo $public_folder . 'js/ga.js'; ?>" async="" type="text/javascript"></script><script type="text/javascript">
+        <script src="<?php echo base_url('public/js/ga.js'); ?>" async="" type="text/javascript"></script><script type="text/javascript">
 
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-36867340-1']);
@@ -32,9 +27,9 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-        <link href="<?php echo $public_folder . 'css/styles.css'; ?>" rel="stylesheet" type="text/css">
-        <script src="<?php echo $public_folder . 'js/script_head.js'; ?>" type="text/javascript"></script>
-        <script src="<?php echo $public_folder . 'js/jquery.js'; ?>" type="text/javascript"></script>
+        <link href="<?php echo base_url('public/css/styles.css'); ?>" rel="stylesheet" type="text/css">
+        <script src="<?php echo base_url('public/js/script_head.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('public/js/jquery.js'); ?>" type="text/javascript"></script>
         <link rel="shortcut icon" href="https://fptshop.com.vn/favicon.ico">
         <!--Powered by nopCommerce - http://www.nopCommerce.com-->
         <!--Copyright (c) 2008-2012-->
@@ -47,7 +42,7 @@
             <div class="swrapper">
                 <div class="swrapperBg"></div>
                 <div class="leftColContent">
-                    <a href="<?php echo $root_link.'home'; ?>">
+                    <a href="<?php echo site_url('home'); ?>">
                         <div class="slogo"></div>
                     </a>
                 </div>
@@ -349,7 +344,7 @@
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                                                 </select>
                                                 <span id="states-loading-progress" style="display: none;">Chờ đợi...
-                                                    <img src="<?php echo $public_folder.'img/ajax_loader_small.gif';?>" alt="Chờ đợi...">
+                                                    <img src="<?php echo base_url('public/img/ajax_loader_small.gif'); ?>" alt="Chờ đợi...">
                                                 </span>
                                             </td>
                                         </tr>
@@ -396,7 +391,7 @@
                                                     <option value="248">Quận Tân Phú &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                                                 </select>
                                                 <span id="states-loading-progressds" style="display: none;">Chờ đợi...
-                                                    <img src="<?php echo $public_folder.'img/ajax_loader_small.gif';?>" alt="Chờ đợi...">
+                                                    <img src="<?php echo base_url('public/img/ajax_loader_small.gif'); ?>" alt="Chờ đợi...">
                                                 </span>
                                             </td>
                                         </tr>
@@ -409,7 +404,7 @@
                         <div class="btnArea">
                             <input name="register" value=" " class="btnRegisterV3" type="submit">
                             <div class="btnAreaText" style="margin-right:40px;margin-top:5px">
-                                Đã có tài khoản? <a href="<?php echo $root_link.'login';?>">Đăng nhập</a>
+                                Đã có tài khoản? <a href="<?php echo site_url('login'); ?>">Đăng nhập</a>
                             </div> 
                         </div>
                     </form>
@@ -419,5 +414,5 @@
                 <div class="clearBoth"></div>
             </div>
         </div>
-       <script src="<?php echo $public_folder.'js/script_foot.js';?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('public/js/script_foot.js'); ?>" type="text/javascript"></script>
     </body></html>
