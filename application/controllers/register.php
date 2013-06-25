@@ -13,7 +13,8 @@ class Register extends CI_Controller {
                 $street_address = $_POST['StreetAddress'];
                 $city_id = $_POST['StateProvinceId'];
                 $district_id = $_POST['FrtDistrictId'];
-                echo $email;
+                $password = sha1($password);
+                echo $email.$password;
             } else {
                 $this->load->view('register_view');
             }
