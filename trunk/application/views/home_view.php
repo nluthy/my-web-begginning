@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+    <head>
         <title> FPTShop.com.vn - ĐTDD, Laptop, Máy tính bảng, Máy ảnh,...Chính hãng. </title>
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
         <meta name="description" content="Hàng 100% chính hãng được phân phối bởi hệ thống bán lẻ kỹ thuật số FPTShop cùng với nhiều khuyến mãi hấp dẫn, bảo hành chính hãng. Mua trực tuyến giá rẻ hơn.">
@@ -14,14 +15,10 @@
         <meta name="distribution" content="Global">
         <meta name="revisit-after" content="1 days">
         <meta name="GENERATOR" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT">
-
         <?php
-            $public_folder = 'http://localhost/CodeIgniterBeginning/public/';
+            $public_folder = 'http://localhost:81/CodeIgniterBeginning/public/';
         ?>
-
-
         <script defer="defer" src="<?php echo $public_folder.'js/ga.js'; ?>" async="async" type="text/javascript"></script><script type="text/javascript">
-
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-36867340-1']);
             _gaq.push(['_trackPageview']);
@@ -32,31 +29,19 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-
-
-
         <link href="<?php echo $public_folder.'css/styles.css'; ?>" rel="stylesheet" type="text/css">
-
         <script defer="defer" async="async" src="<?php echo $public_folder.'js/script_head.js'; ?>" type="text/javascript"></script>
         <script defer="defer" async="async" src="<?php echo $public_folder.'js/jquery.js'; ?>" type="text/javascript"></script>
-
-
-
-
-
         <link rel="shortcut icon" href="http://cdn.fptshop.com.vn/favicon.ico">
-
         <!--Powered by nopCommerce - http://www.nopCommerce.com-->
         <!--Copyright (c) 2008-2012-->
         <script type="text/javascript">window.sendToApp = function(data, ctid) {var doc = window.document;var event = doc.createEvent('MessageEvent');event.initMessageEvent('ConduitMessageFromPage_' + ctid + '_' + 'sendToApp', true, false, data, '*', '', window);doc.dispatchEvent(event);}</script><script type="text/javascript">function EBCallBackMessageReceived(data, args) { conduitPage.sendRequest(data.ctid, data.appId, data.topic, args);} if (!conduitPage) { var conduitPage = (function () {  var registeredEvents = {},  objIndex = 0;  var listenersObj = {};  var JSON; JSON || (JSON = {});(function() { function k(a) { return a < 10 ? "0" + a : a } function o(a) { p.lastIndex = 0; return p.test(a) ? '"' + a.replace(p, function(a) { var c = r[a]; return typeof c === "string" ? c : "\\u" + ("0000" + a.charCodeAt(0).toString(16)).slice(-4) }) + '"' : '"' + a + '"' } function l(a, j) { var c, d, h, m, g = e, f, b = j[a]; b && typeof b === "object" && typeof b.toJSON === "function" && (b = b.toJSON(a)); typeof i === "function" && (b = i.call(j, a, b)); switch (typeof b) {  case "string": return o(b); case "number": return isFinite(b) ? String(b) : "null"; case "boolean": case "null": return String(b); case "object": if (!b) return "null";  e += n; f = []; if (Object.prototype.toString.apply(b) === "[object Array]") { m = b.length; for (c = 0; c < m; c += 1) f[c] = l(c, b) || "null"; h = f.length === 0 ? "[]" : e ? "[\n" + e + f.join(",\n" + e) + "\n" + g + "]" : "[" + f.join(",") + "]"; e = g; return h } if (i && typeof i === "object") { m = i.length; for (c = 0; c < m; c += 1) typeof i[c] === "string" && (d = i[c], (h = l(d, b)) && f.push(o(d) + (e ? ": " : ":") + h)) } else for (d in b) Object.prototype.hasOwnProperty.call(b, d) && (h = l(d, b)) && f.push(o(d) + (e ? ": " : ":") + h); h = f.length === 0 ? "{}" : e ? "{\n" + e + f.join(",\n" + e) + "\n" + g + "}" : "{" + f.join(",") +"}"; e = g; return h } } if (typeof Date.prototype.toJSON !== "function") Date.prototype.toJSON = function() { return isFinite(this.valueOf()) ? this.getUTCFullYear() + "-" + k(this.getUTCMonth() + 1) + "-" + k(this.getUTCDate()) + "T" + k(this.getUTCHours()) + ":" + k(this.getUTCMinutes()) + ":" + k(this.getUTCSeconds()) + "Z" : null }, String.prototype.toJSON = Number.prototype.toJSON = Boolean.prototype.toJSON = function() { return this.valueOf() }; var q = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,p = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g, e, n, r = { "\u0008": "\\b", "\t": "\\t", "\n": "\\n", "\u000c": "\\f", "\r": "\\r", '"': '\\"', "\\": "\\\\" }, i; if (typeof JSON.stringify !== "function") JSON.stringify = function(a, j, c) { var d; n = e = ""; if (typeof c === "number") for (d = 0; d < c; d += 1) n += " "; else typeof c === "string" && (n = c); if ((i = j) && typeof j !== "function" && (typeof j !== "object" || typeof j.length !== "number")) throw Error("JSON.stringify"); return l("",{ "": a })}; if (typeof JSON.parse !== "function") JSON.parse = function(a, e) { function c(a, d) { var g, f, b = a[d]; if (b && typeof b === "object") for (g in b) Object.prototype.hasOwnProperty.call(b, g) && (f = c(b, g), f !== void 0 ? b[g] = f : delete b[g]); return e.call(a, d, b) } var d, a = String(a); q.lastIndex = 0; q.test(a) && (a = a.replace(q, function(a) { return "\\u" + ("0000" + a.charCodeAt(0).toString(16)).slice(-4) })); if (/^[\],:{}\s]*$/.test(a.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, "@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,"]").replace(/(?:^|:|,)(?:\s*\[)+/g, ""))) return d = eval("(" + a + ")"), typeof e === "function" ? c({ "": d }, "") : d; throw new SyntaxError("JSON.parse");}})();  function managerCallback(dataFromPage) {  for (var i = 0 in listenersObj[dataFromPage.topic]) {   listenersObj[dataFromPage.topic][i](dataFromPage.data);   delete listenersObj[dataFromPage.topic][i];  }  }  function addCallback(topic, callback) {  if (!listenersObj[topic]) {   listenersObj[topic] = [];  }  listenersObj[topic].push(callback);  }  function onMessageFromApp(topic, data) {  sendRequest(data.ctid, null, topic, data.userData, function () { }, true, data.cbId);  }  this.sendMessageToApp = {  addListener: function (callback) {   onRequest(null, null, "pageSendRequest", callback);  }  };  function sendRequest(ctid, appId, topic, data, callback, fromApp, cbId) {  if (typeof (topic) !== "string" ) {   return { errorMessage: "Invalid topic, expected a string.", errorCode: 100 };  }  if (typeof (data) !== "string") {   return { errorMessage: "Invalid data, expected a string.", errorCode: 100 };  }  if (appId) topic = ctid + "_" + appId + "_tabs_" + topic;  if (!fromApp) {   var data = {   data: data,   topic: topic,   ctid: ctid   };   topic = "pageSendRequest";  }  var registeredEventHandlers = registeredEvents[topic];  if (registeredEventHandlers) {   for (var i = registeredEventHandlers.length - 1; i >= 0; i--) {   try {    if (callback && !fromApp) {    addCallback(data.topic, callback);    }    registeredEventHandlers[i].handler.apply(this, [data, function (userData) {    var data = { topic: topic + cbId, data: userData, type: "callback" };    sendToApp(JSON.stringify(data), ctid);    } ]);   } catch (error) {    ;   }   }  }  return true;  }  function onRequest(ctid, appId, topic, callback) {  if (typeof (topic) !== "string") {   return { errorMessage: "Invalid topic, expected a string.", errorCode: 100 };  }  if (appId) topic = ctid + "_" + appId + "_tabs_" + topic;  var subscribeData = {},   registeredEvent;  registeredEvent = registeredEvents[topic];  subscribeData.handler = callback;  if (!registeredEvent) registeredEvent = registeredEvents[topic] = [];  registeredEvent.push(subscribeData);  return true;  }  sendMessageToApp.addListener(function (data) {  sendToApp(JSON.stringify(data), data.ctid);  });  return {  onMessageFromApp: onMessageFromApp,  sendRequest: sendRequest,  onRequest: { addListener: onRequest },  managerCallback: managerCallback,  JSON: JSON  }; })(); }</script><script type="text/javascript">(function(){function selectionProcessor() {
-
             function trimString(str) {
                 if (typeof str != "string") {
                     return "";
                 }
                 return str.replace(/^\s+|\s+$/g, "");
             }
-
 
             function cutToMaxLatter(data) {
                 if (typeof data != "string") {
@@ -72,7 +57,6 @@
                 return data;
             }
 
-
             function bindSelection() {
                 if (document.body && document.body.addEventListener) {
                     document.body.addEventListener("mouseup", handletext, false);
@@ -80,7 +64,6 @@
                     document.body.attachEvent("onmouseup", handletext);
                 }
             }
-
 
             function handletext() {
                 var dataObj = {};
@@ -112,45 +95,32 @@
 
             conduitPage.sendRequest('CT3289075', '130064539389933152',"search/plugin[onpage_selection]:onPageMessage", conduitPage.JSON.stringify({name: "handshake"}), function () {});
             return {bindSelection: bindSelection};
-        } selectionProcessor().bindSelection(); })();</script></head>
-    <body><div style="visibility: hidden; position: absolute; overflow: hidden; padding: 0px; width: 0px; left: 0px; top: 0px;" id="WzTtDiV"></div>
-
-
-
-
-
-        <div id="dialog-notifications-success" title="Thông báo" style="display:none;">
+        } selectionProcessor().bindSelection(); })();
+        </script>
+    </head>
+    <body>
+        <div style="visibility: hidden; position: absolute; overflow: hidden; padding: 0px; width: 0px; left: 0px; top: 0px;" id="WzTtDiV"></div>
+        <div id="dialog-notifications-success" title="Thông báo" style="display:none;">
         </div>
-        <div id="dialog-notifications-error" title="Lỗi" style="display:none;">
+        <div id="dialog-notifications-error" title="Lỗi" style="display:none;">
         </div>
         <div id="bar-notification" class="bar-notification">
-            <img src="img/ico-close-notification-bar.png" class="close" alt="Close" title="Close">
+            <img src="<?php echo $public_folder.'img/ico-close-notification-bar.png'; ?>" class="close" alt="Close" title="Close">
         </div>
-
-
-
         <!--VuTDL Block Banner On Home Page-->
         <div class="back-top" style="left:50%; margin-left:512px;">
-
             <input name="B__Outputcahe_FrtBannerShowRight__E" type="hidden">
             <a href="http://fptshop.com.vn/samsung-galaxy-camera-gc100"><img alt="" src="img/galaxy%2520camera%2520-%2520right.png" style="width: 130px; height: 510px;"></a><br>
-
         </div>
         <div class="back-top" style="right:50%; margin-right:512px;">
-
             <input name="B__Outputcahe_FrtBannerShowLeft__E" type="hidden">
-
             <a href="http://fptshop.com.vn/lenovo-k900"><img alt="" src="img/K900%2520-%2520left.png" style="width: 130px; height: 510px;"></a><br>
-
         </div>
         <div class="firstLine">
             <div class="topBar">
-
-
                 <script>
                 function tick(){
-	
-                $('#ticker_01frt li:first').slideUp( function () { 
+	                $('#ticker_01frt li:first').slideUp( function () { 
                     //alert("show test");
                     $(this).appendTo($('#ticker_01frt')).slideDown(); 
 		
@@ -158,21 +128,10 @@
                 }
                 setInterval(function(){ tick () }, 3000);
                 </script>
-
                 <div class="hotnewfrt">
                     <span class="hottitle" style="50px; float:left;">TIN MỚI : </span>
                     <span>
                         <ul id="ticker_01frt" class="ticker">
-
-
-
-
-
-
-
-
-
-
                             <li style="display: list-item; overflow: hidden; height: 20.7917px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
                                 <a href="http://fptshop.com.vn/tong-hop-cac-chuong-trinh-mua-hang-tra-gop-dang-co-tai-fpt-shop-trong-thang-6-va-7" rel="nofollow">
                                     <!--a href="" rel="nofollow"-->                                 
@@ -205,44 +164,28 @@
                                     <!--a href="" rel="nofollow"-->                                 
                                     Gia hạn ưu đãi dành cho gói bảo hiểm đang "hot nhất" hiện nay </a></li></ul>
                     </span>
-
                 </div>
                 <div class="firstCat">
                     <ul>
-
                         <li><a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="ico-wishlist" rel="nofollow">Danh sách yêu thích</a> <a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="wishlist-qty" rel="nofollow">
                                 (0)</a> </li>
-
                         <li><a href="http://fptshop.com.vn/login" class="ico-login" rel="nofollow">Đăng nhập</a></li>
                         <li><a href="http://fptshop.com.vn/dang-ky" class="ico-register" rel="nofollow">Đăng ký</a></li>
-
-
                     </ul>
                 </div>
-
             </div>
-
         </div>
-
         <div class="wrapper">
-
             <script type="text/javascript">
         AjaxCart.init(false, '#cart-quity', '.wishlist-qty', '#divCart');
-
         function UpdateTiff() {
-
             $('div.tiff').each(function () {
                 var inst = $(this).find('.instal_text'), coupon = $(this).find('.coupon_stt');
-
                 if (inst.length > 0 && coupon.length == 0 && inst.attr('style') == undefined) {
-
                     inst.css('margin-left', '32px');
                 }
                 if (inst.length == 0 && coupon.length > 0 && coupon.attr('style') == undefined)
                     coupon.css('margin-left', '29px');
-
-
-
             });
         }
         $(function () {
@@ -274,7 +217,6 @@
 
             //            });
             var temp = "";
-          
             $(document).ajaxSuccess(UpdateTiff)
             $('input[placeholder]').focus(function () {
                 temp = $(this).attr("placeholder");
@@ -288,13 +230,9 @@
             //                var numTopChild = $('li.lr > div.tr').index(this)+1;
             //                $(this).next('div.child').css('top', ((numTopChild*34)*-1 + 15) + "px");
             //            });
-
-
         });
             </script>
             <script defer="defer" async="async" type="text/javascript" src="FPTShop_Home_files/wz_tooltip.js"></script>
-
-
             <div class="banner">
                 <div class="logo">
                     <a href="http://fptshop.com.vn/">
@@ -320,8 +258,7 @@
                     $('#search-catText').html($(this).find('option:selected').html());
                     $('#Cid').change(function(){
                         $('#search-catText').html($(this).find('option:selected').html());
-             
-                    });
+                                 });
                     $('#txtSearch').keydown(function(event){
                         if(event.keycode==13)
                         {
@@ -337,7 +274,6 @@
                         search_terms.focus();                    
                         return false;
                     }
-
                     return true;
                     }
                 
@@ -354,7 +290,6 @@
                         create:function(){
                             $(this).autocomplete().css('z-index',10000);
                         }
-
                     })
                     .data("autocomplete")._renderItem = function( ul, item ) {
                         var t = item.label;
@@ -421,15 +356,11 @@
                 <div class="loading-image">
                 </div>
             </div>
-
-
             <!-----------BANNER------------->
             <div class="bannerArea">
                 <!-----------------Catalog-------------------------------------------------------------------->
-
                 <script type="text/javascript">
                 $(function () {
-
                 $("div.leftMenu ul.ur li.lr").hover(function () {
                     var accum_width = 0;
                     if ($(this).find("div.child").children("div.manufactor").length > 0) {
@@ -457,12 +388,8 @@
                             $(this).css("float", "none");
                             $(this).css("width", "");
                         }
-
-
                     });
                     $("div.child").css("width", accum_width);
-
-
                 });
                 });
                 </script>
@@ -470,13 +397,8 @@
                     <ul class="ur">
                         <li class="lr inactive">
                             <div class="tr">
-
-
-
                                 <a href="http://fptshop.com.vn/dien-thoai-">Điện thoại</a>
-
                             </div>
-
                             <div class="child" style="top: -20px; width: 300px;">
                                 <div class="subCat"> 
                                     <ul class="catchild" style="float:left; width:150px;">
@@ -499,17 +421,12 @@
                                             <a href="http://fptshop.com.vn/dien-thoai-di-dong?specs=42">Cảm ứng</a> 
                                         </li> 
                                         <li> <a href="http://fptshop.com.vn/dtdd-da-sim">Đa sim</a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/Sim-s%E1%BB%91">Sim số</a></li>
                                         <li> <a href="http://fptshop.com.vn/sim">Sim</a> </li>
                                         <li> <a href="http://fptshop.com.vn/SIM-3G">Sim 3G</a> </li>
-
                                     </ul>
-
-
                                 </div>
                                 <div class="manufactor">
                                     <ul>
@@ -542,35 +459,23 @@
 
                                     </ul>
                                 </div>
-
                             </div>
                         </li> 
                         <li class="lr inactive">
                             <div class="tr">
-
-
-
                                 <a href="http://fptshop.com.vn/may-tinh-bang-c2-">Máy tính bảng</a>
-
                             </div>
-
                             <div class="child" style="top: -60px; width: 300px;">
                                 <div class="subCat"> 
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/may-tinh-bang-c9">Máy tính bảng</a></li>
                                         <li> <a href="http://fptshop.com.vn/may-tinh-bang-android">HĐH Android</a> </li>
                                         <li> <a href="http://fptshop.com.vn/may-tinh-bang-ios">HĐH iOS</a> </li>
                                         <li> <a href="http://fptshop.com.vn/may-tinh-bang-window-8">HĐH Windows</a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float: none;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/phu-kien-may-tinh-bang">Phụ kiện máy tính bảng</a></li>
-
                                     </ul>
-
-
                                 </div>
                                 <div class="manufactor">
                                     <ul>
@@ -584,24 +489,16 @@
                                         <li><a href="http://fptshop.com.vn/may-tinh-bang-c2/kingcom-2-m">KingCom</a></li>
                                         <li><a href="http://fptshop.com.vn/may-tinh-bang-c2/samsung-m19-m">Samsung</a></li>
                                     </ul>
-
                                 </div>
-
                             </div>
                         </li> 
                         <li class="lr inactive">
                             <div class="tr">
-
-
-
                                 <a href="http://fptshop.com.vn/may-tinh-xach-tay-">Máy tính xách tay</a>
-
                             </div>
-
                             <div class="child" style="top: -100px; width: 300px;">
                                 <div class="subCat"> 
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/may-tinh-xach-tay-c10">Máy tính xách tay</a></li>
                                         <li>
                                             <a href="http://fptshop.com.vn/may-tinh-xach-tay-c10?level=0-10000000">Phổ thông</a> 
@@ -624,15 +521,10 @@
                                         <li>
                                             <a href="http://fptshop.com.vn/may-tinh-xach-tay-c10?specs=2294">Netbook</a> 
                                         </li> 
-
                                     </ul>
                                     <ul class="catchild" style="float: none;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/mtxt-phan-mem">Phần mềm</a></li>
-
                                     </ul>
-
-
                                 </div>
                                 <div class="manufactor">
                                     <ul>
@@ -656,46 +548,31 @@
                                         <li><a href="http://fptshop.com.vn/may-tinh-xach-tay/sony-m">Sony</a></li>
                                         <li><a href="http://fptshop.com.vn/may-tinh-xach-tay/symantec-m">Symantec</a></li>
                                         <li><a href="http://fptshop.com.vn/may-tinh-xach-tay/toshiba-m">Toshiba</a></li>
-
                                     </ul>
                                 </div>
-
                             </div>
                         </li> 
                         <li class="lr inactive">
                             <div class="tr">
-
-
-
                                 <a href="http://fptshop.com.vn/may-tinh-de-ban-">Máy tính để bàn</a>
-
                             </div>
-
                             <div class="child" style="top: -140px; width: 300px;">
                                 <div class="subCat"> 
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/man-hinh">Màn hình</a></li>
                                         <li> <a href="http://fptshop.com.vn/Man-hinh-LCD-c52">Màn hình LCD</a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/may-bo">Máy Bộ</a></li>
                                         <li> <a href="http://fptshop.com.vn/Apple-desktop">Apple</a> </li>
                                         <li> <a href="http://fptshop.com.vn/HP-Desktop">HP</a> </li>
                                         <li> <a href="http://fptshop.com.vn/man-hinh-LCD">Lenovo</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Dell-Desktop">Dell </a> </li>
                                         <li> <a href="http://fptshop.com.vn/FPT-Elead-Desktop">FPT Elead</a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/Ph%E1%BA%A7n-m%E1%BB%81m-c130">Phần mềm</a></li>
-
                                     </ul>
-
-
                                 </div>
                                 <div class="manufactor">
                                     <ul>
@@ -709,40 +586,27 @@
                                         <li><a href="http://fptshop.com.vn/may-tinh-de-ban/lenovo-m">Lenovo</a></li>
                                         <li><a href="http://fptshop.com.vn/may-tinh-de-ban/samsung-m19-m">Samsung</a></li>
                                     </ul>
-
                                 </div>
-
                             </div>
                         </li> 
                         <li class="lr inactive">
                             <div class="tr">
-
-
-
                                 <a href="http://fptshop.com.vn/ky-thuat-so-">Kỹ thuật số</a>
-
                             </div>
-
                             <div class="child" style="top: -180px; width: 300px;">
                                 <div class="subCat"> 
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/may-anh">Máy ảnh</a></li>
                                         <li> <a href="http://fptshop.com.vn/Canon">Canon</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Nikon">Nikon</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Sony">Sony</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Samsung">Samsung</a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/da-phuong-tien">Đa phương tiện</a></li>
                                         <li> <a href="http://fptshop.com.vn/may-nghe-nhac-mp3">Máy nghe nhạc MP3</a> </li>
                                         <li> <a href="http://fptshop.com.vn/may-xem-phim-mp4">Máy xem phim MP4</a> </li>
-
                                     </ul>
-
-
                                 </div>
                                 <div class="manufactor">
                                     <ul>
@@ -752,24 +616,16 @@
                                         <li><a href="http://fptshop.com.vn/ky-thuat-so/samsung-m19-m">Samsung</a></li>
                                         <li><a href="http://fptshop.com.vn/ky-thuat-so/sony-m">Sony</a></li>
                                     </ul>
-
                                 </div>
-
                             </div>
                         </li> 
                         <li class="lr inactive" style="border-bottom:none">
                             <div class="tr">
-
-
-
                                 <a href="http://fptshop.com.vn/phu-kien-">Phụ kiện</a>
-
                             </div>
-
                             <div class="child" style="top: -220px; width: 300px;">
                                 <div class="subCat"> 
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/phu-kien-DDTD">Phụ kiện ĐTDĐ</a></li>
                                         <li> <a href="http://fptshop.com.vn/Loa-dien-thoai">Loa điện thoại</a> </li>
                                         <li> <a href="http://fptshop.com.vn/tai-nghe-co-day">Tai nghe có dây</a> </li>
@@ -779,10 +635,8 @@
                                         <li> <a href="http://fptshop.com.vn/sac-dtdd-c78">Sạc ĐTDĐ</a> </li>
                                         <li> <a href="http://fptshop.com.vn/cap-dau-doc-the">Cáp, đầu đọc thẻ</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Pin-%C4%90TD%C4%90">Pin ĐTDĐ </a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/phu-kien-laptop">Phụ kiện laptop</a></li>
                                         <li> <a href="http://fptshop.com.vn/Tui-chong-soc">Túi chống sốc</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Sac-Laptop">Sạc Laptop</a> </li>
@@ -796,10 +650,8 @@
                                         <li> <a href="http://fptshop.com.vn/Chuot-may-tinh">Chuột máy tính</a> </li>
                                         <li> <a href="http://fptshop.com.vn/USB-thiet-bi-luu-tru">USB, thiết bị lưu trữ</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Webcam">Webcam</a> </li>
-
                                     </ul>
                                     <ul class="catchild" style="float:left; width:150px;">
-
                                         <li class="title">  <a href="http://fptshop.com.vn/Phu-kien-Apple">Phụ kiện Apple</a></li>
                                         <li> <a href="http://fptshop.com.vn/Phu-kien-Ipod">Phụ kiện Ipod</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Phu-kien-Iphone">Phụ kiện Iphone</a> </li>
@@ -807,18 +659,13 @@
                                         <li> <a href="http://fptshop.com.vn/Phu-kien-Mac">Phụ kiện Mac</a> </li>
                                         <li> <a href="http://fptshop.com.vn/Bao-da-c133">Bao da</a> </li>
                                         <li> <a href="http://fptshop.com.vn/%E1%BB%90p-l%C6%B0ng">Ốp lưng</a> </li>
-
                                     </ul>
-
-
                                 </div>
-
                             </div>
                         </li> 
                     </ul>
                     <div class="leftMenuBgBottom"></div>
                 </div>
-
                 <!------------------Slide show------------------------------------------------------------------->
                 <div class="bigBanner">
                     <input name="B__Outputcahe_FrtBannerShow1__E" type="hidden">
