@@ -222,7 +222,7 @@
 
             <div class="banner">
                 <div class="logo">
-                    <a href="http://fptshop.com.vn/">
+                    <a href="<?php echo site_url('home');?>">
                         <img src="<?php echo $public_folder . 'img/logo.png'; ?>" class="noborder"></a>
                 </div>
                 <!------Module tìm kiếm theo catalog--->
