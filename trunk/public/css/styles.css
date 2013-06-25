@@ -162,7 +162,7 @@ input#txtSearch:Focus{outline-color:white}
 .companyList a:hover{text-decoration:underline}
 .line4{background:url(images/line4.png) no-repeat;width:255px;height:2px;margin:10px 0}
 .line5{background:url(images/line5.png) no-repeat;width:255px;height:2px;margin:10px 0}
-.fanpage{width:200px;height:200px}
+.fanpage{width:245px;height:300px}
 .contact{border:1px solid #DDD;float:left;width:759px;padding-top:16px;height:283px}
 .sharefacebook{float:left;margin-left:14px;width:200px}
 .lineX{background:url(images/lineX.png) repeat-x;height:8px;margin:7px 0}
@@ -388,7 +388,7 @@ li.lr > div.child > ul.catchild{border-right:solid 1px #ddd}
 .starInside{background:url(images/star.png) no-repeat;width:67px;height:11px;margin-top:5px;margin-left:50px}
 .checkCompare{font-style:italic;font-size:11px;margin-top:5px;margin-left:27px}
 /*---Product detailed--*/.productView{float:left;width:1020px}
-.productView1{float:left;width:320px;height}
+.productView1{float:left;width:320px;}
 .productThumb{float:left;width:320px;margin-left:-5px;margin-top:7px}
 #productThumb{margin-left:5px}
 #productThumb:hover{border:1px solid #999}
@@ -910,7 +910,7 @@ ul.listPromotion li{list-style-type:none !important}
 .iconphone{background:url('images/phoneIcon.png') no-repeat left 14px;padding-left:34px}
 .mobile{font-size:18px;font-weight:bold}
 #divfilter{display:none}
-. jcarousel-skin-tango{margin-left:14px}
+.jcarousel-skin-tango{margin-left:14px}
 .modalCloseImg{background:url("images/x.png") no-repeat scroll 0 0 transparent;cursor:pointer;display:inline;height:20px;position:absolute;right:2px;top:5px;width:20px;z-index:3200}
 .divnoitice{color:#373737;float:left}
 .colortrans{background:url("images/ico_trans.gif") no-repeat;width:10px;height:10px;display:block}
@@ -1060,7 +1060,7 @@ ul.listPromotion li{list-style-type:none !important}
 .sumPay{font-size:15px;font-weight:bold;text-align:right}
 .muaBtn{background:url("images/muaBtn.png") no-repeat scroll 0 0 transparent;border:medium none;cursor:pointer;height:35px;width:150px}
 .muaBtn:hover{background:url("images/muaBtnhover.png") repeat scroll 0 0 transparent}
-.tbRegister input[type=text,type=password],.tbRegister select{width:214px}
+.tbRegister input[type=text],.tbRegister select{width:214px}
 .checkLineHv{height:1px;background:#ddd;width:92%}
 .disable{background:#F7F3F3;border:solid 1px #868686 !important}
 .igift{background:url('images/giftIncludedWhite.png') no-repeat;color:#666;font-size:11px;padding-left:15px}
@@ -1260,7 +1260,7 @@ img{border:none}
 .buttons{clear:both}
 .spTitle a{font-weight:bold}
 /*Banner*/.banner-catagory{width:807px;text-align:center;position:relative}
-..banner-catagory img{margin-top:-5px}
+.banner-catagory img{margin-top:-5px}
 .banner-7{width:1020px;text-align:center;padding-top:10px}
 .banner-4{width:807px;text-align:center;min-height:14px}
 /*===End banner==*/.btnSupportNew{background:url('images/btnSupportNew.png') no-repeat;display:block;width:220px;height:85px}
@@ -1367,7 +1367,7 @@ img{border:none}
 #greyBtn170 input{background:url("images/greyBtn170.png") no-repeat scroll 0 0 transparent;border:medium none;color:#787878;cursor:pointer;font-size:11px;height:34px;text-align:center;text-transform:uppercase;width:210px;font-weight:bold;float:right;margin-top:7px;margin-right:35px}
 #greyBtn170 input:hover{color:#d59372}
 /* xuandt5 add*/.hotnewfrt{float:left;height:22px !important;line-height:22px !important;overflow:hidden}
-.hotnewfrt .hottitle{color:#FF4F4F;font-style:italic;font-weight:bold}
+.hotnewfrt .hottitle{color:#FF4F4F;font-style:italic;font-weight:bold; float:left;}
 .hotnewfrt ul li a{color:#636363;font-weight:bold}
 .ticker{height:40px;overflow:hidden;margin:0;list-style:none;border:0 solid #ddd}
 .ticker li{height:30px;text-align:left;padding-left:3px;border-bottom:0 dotted #ddd}
