@@ -16,8 +16,7 @@
         <meta name="GENERATOR" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT">
 
         <?php
-        $public_folder = 'http://localhost:81/CodeIgniterBeginning/public/';
-        $root_link = 'http://localhost:81/CodeIgniterBeginning/index.php/';
+        $public_folder = base_url().'public/';
         ?>
         <script defer="defer" src="<?php echo $public_folder . 'js/ga.js'; ?>" async="async" type="text/javascript"></script>
         <script type="text/javascript">
@@ -139,8 +138,8 @@
                         <li><a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="ico-wishlist" rel="nofollow">Danh sách yêu thích</a> <a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="wishlist-qty" rel="nofollow">
                                 (0)</a> </li>
 
-                        <li><a href="<?php echo $root_link . 'login'; ?>" class="ico-login" rel="nofollow">Đăng nhập</a></li>
-                        <li><a href="<?php echo $root_link . 'register'; ?>" class="ico-register" rel="nofollow">Đăng ký</a></li>
+                        <li><a href="<?php echo base_url() . 'index.php/login'; ?>" class="ico-login" rel="nofollow">Đăng nhập</a></li>
+                        <li><a href="<?php echo base_url() . 'index.php/register'; ?>" class="ico-register" rel="nofollow">Đăng ký</a></li>
 
 
                     </ul>
