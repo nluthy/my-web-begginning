@@ -50,94 +50,94 @@
                 <div class="rightColContent">
 
 
-
-                    <script type="text/javascript">
-                        $(function() {
-                            ///XUANDT ADD PROVINCE DEFAULT TPHCM
-                            $("#StateProvinceId option[value='23']").attr("selected", "selected");
-
-                            $("#CountryId").change(function() {
-                                var selectedItem = $(this).val();
-                                var ddlStates = $("#StateProvinceId");
-                                var statesProgress = $("#states-loading-progress");
-                                statesProgress.show();
-                                $.ajax({
-                                    cache: false,
-                                    type: "GET",
-                                    url: "/country/getstatesbycountryid",
-                                    data: { "countryId": selectedItem, "addEmptyStateIfRequired": "true" },
-                                    success: function (data) {
-                                        ddlStates.html('');
-                                        $.each(data, function(id, option) {
-                                            ddlStates.append($('<option></option>').val(option.id).html(option.name));
-                                        });
-                                        statesProgress.hide();
-                                    },
-                                    error:function (xhr, ajaxOptions, thrownError){
-                                        alert('Failed to retrieve states.');
-                                        statesProgress.hide();
-                                    }  
-                                });
-                            });
-
-
-                            $("#StateProvinceId").change(function() {
-                                var selectedItemfd = $(this).val();
-                                var ddlFrtDistrict = $("#FrtDistrictId");
-                                var statesProgressd = $("#states-loading-progressds");
-                                statesProgressd.show();
-                                $.ajax({
-                                    cache:false,
-                                    type: "GET",
-                                    url: "/country/getfrtDistrictbystateId",
-                                    data: { "stateProvinceId": selectedItemfd, "addEmptyFrtDistrictIfRequired": "true" },
-                                    success: function (data) {
-                                        ddlFrtDistrict.html('');
-                                        $.each(data, function(id, option) {
-                                            ddlFrtDistrict.append($('<option></option>').val(option.id).html(option.name));
-                                            statesProgressd.hide();
-                                        });
-                                    },
-                                    error:function (xhr, ajaxOptions, thrownError){
-                                        alert('Failed to retrieve district.');
-                                        statesProgressd.hide();
-                                    }  
-                                });
-                            });
-
-
-
-           
-                            $("#Email").blur(function () {    
-                                // alert("ttt");
-                                var emailtt=$("#Email").val();
-                                $.ajax({
-                                    cache: false,
-                                    type: "POST",                    
-                                    url:"/Customer/CheckEmailAvailability",                        
-                                    data: { "email": emailtt  },                        
-                                    success: function (data) {
-                                        //  alert(data.Available);
-                                        if(data.Available==true){
-                                            $("#checkemailtt").html(data.pResult);
-                                            $("#checkemailtt").css('color','#FF0000');
-                   
-                                            return false;
-                                        }else{
-                                            $("#checkemailtt").html("");
-                                            return true;
-                                        }
-
-                                    },
-                                    error:function (xhr, ajaxOptions, thrownError){
-                                        alert('Lỗi, bạn hãy thử lại.');
-                                    }  
-                                });         
-             
-                            });
-       
-                        });
-                    </script>
+                    <!--
+                                        <script type="text/javascript">
+                                            $(function() {
+                                                ///XUANDT ADD PROVINCE DEFAULT TPHCM
+                                                $("#StateProvinceId option[value='23']").attr("selected", "selected");
+                    
+                                                $("#CountryId").change(function() {
+                                                    var selectedItem = $(this).val();
+                                                    var ddlStates = $("#StateProvinceId");
+                                                    var statesProgress = $("#states-loading-progress");
+                                                    statesProgress.show();
+                                                    $.ajax({
+                                                        cache: false,
+                                                        type: "GET",
+                                                        url: "/country/getstatesbycountryid",
+                                                        data: { "countryId": selectedItem, "addEmptyStateIfRequired": "true" },
+                                                        success: function (data) {
+                                                            ddlStates.html('');
+                                                            $.each(data, function(id, option) {
+                                                                ddlStates.append($('<option></option>').val(option.id).html(option.name));
+                                                            });
+                                                            statesProgress.hide();
+                                                        },
+                                                        error:function (xhr, ajaxOptions, thrownError){
+                                                            alert('Failed to retrieve states.');
+                                                            statesProgress.hide();
+                                                        }  
+                                                    });
+                                                });
+                    
+                    
+                                                $("#StateProvinceId").change(function() {
+                                                    var selectedItemfd = $(this).val();
+                                                    var ddlFrtDistrict = $("#FrtDistrictId");
+                                                    var statesProgressd = $("#states-loading-progressds");
+                                                    statesProgressd.show();
+                                                    $.ajax({
+                                                        cache:false,
+                                                        type: "GET",
+                                                        url: "/country/getfrtDistrictbystateId",
+                                                        data: { "stateProvinceId": selectedItemfd, "addEmptyFrtDistrictIfRequired": "true" },
+                                                        success: function (data) {
+                                                            ddlFrtDistrict.html('');
+                                                            $.each(data, function(id, option) {
+                                                                ddlFrtDistrict.append($('<option></option>').val(option.id).html(option.name));
+                                                                statesProgressd.hide();
+                                                            });
+                                                        },
+                                                        error:function (xhr, ajaxOptions, thrownError){
+                                                            alert('Failed to retrieve district.');
+                                                            statesProgressd.hide();
+                                                        }  
+                                                    });
+                                                });
+                    
+                    
+                    
+                               
+                                                $("#Email").blur(function () {    
+                                                    // alert("ttt");
+                                                    var emailtt=$("#Email").val();
+                                                    $.ajax({
+                                                        cache: false,
+                                                        type: "POST",                    
+                                                        url:"/Customer/CheckEmailAvailability",                        
+                                                        data: { "email": emailtt  },                        
+                                                        success: function (data) {
+                                                            //  alert(data.Available);
+                                                            if(data.Available==true){
+                                                                $("#checkemailtt").html(data.pResult);
+                                                                $("#checkemailtt").css('color','#FF0000');
+                                       
+                                                                return false;
+                                                            }else{
+                                                                $("#checkemailtt").html("");
+                                                                return true;
+                                                            }
+                    
+                                                        },
+                                                        error:function (xhr, ajaxOptions, thrownError){
+                                                            alert('Lỗi, bạn hãy thử lại.');
+                                                        }  
+                                                    });         
+                                 
+                                                });
+                                            });
+                                        </script>
+                    -->
                     <form novalidate="novalidate" method="post"><input name="__RequestVerificationToken" value="VcCH2afm0XYfUyKHkXnx8kAh8gSJNBEaTRO2wl+mmmZ86FUTGjLaJK/YUopEEz6FKDWQ2s4iyi65TKBKIz6oOakEJDYk2VvurVIBZPFXFjkzmVZn9GaoQSGTeK2H1kZxB8puTYG+s95qmsa240f5mQk1TSveq14pw3LOF71KQ5I=" type="hidden">        <div>
                             <div class="logoregister"></div>
                             <!-- <div class="message-error">
@@ -188,10 +188,6 @@
                                         </td>
                                     </tr>
                                 </tbody></table>
-
-
-                            <div class="qaLine1020" style="width:100%"></div>
-
                         </div>
                         <div>
                             <div class="addrRowTitle">THÔNG TIN TÀI KHOẢN</div>

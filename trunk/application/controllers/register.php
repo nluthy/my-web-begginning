@@ -21,7 +21,7 @@ class Register extends CI_Controller {
                 $city_id = $_POST['StateProvinceId'];
                 $district_id = $_POST['FrtDistrictId'];
 
-                $salt = random_string(alnum, 10);
+                $salt = random_string('alnum', 10);
                 $password = strtoupper(sha1($password . $salt));
                 $add_date = date('Y-m-d H:i:s', now());
                 $data = array(
