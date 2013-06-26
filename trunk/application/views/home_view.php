@@ -88,16 +88,6 @@
                     <span class="hottitle" style="float:left;">TIN MỚI : </span>
                     <span>
                         <ul id="ticker_01frt" class="ticker">
-
-
-
-
-
-
-
-
-
-
                             <li style="display: list-item;">
                                 <a href="http://fptshop.com.vn/fptshop-tuyen-dung-nhieu-vi-tri-cho-cua-hang-sap-khai-truong-tai-quang-binh" rel="nofollow">
                                     <!--a href="" rel="nofollow"-->                                 
@@ -138,7 +128,7 @@
                         <li><a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="ico-wishlist" rel="nofollow">Danh sách yêu thích</a> <a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="wishlist-qty" rel="nofollow">
                                 (0)</a> </li>
                         <?php if ($user) { ?>
-                                <li><?php echo 'Xin chào '.$user['full_name']; ?></li>
+                            <li><?php echo '<h1>'.'Xin chào '.$user['full_name'].'</h1>'; ?></li>
                             <?php
                         } else {
                             ?>
