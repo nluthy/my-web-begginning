@@ -5,7 +5,7 @@
                     $this->load->helper('url');
                 }
 		public function index(){
-			$this->load->view('home_view');
+			$this->load->view('home_view', array('user' => ''));
 		}
 	}
 ?>

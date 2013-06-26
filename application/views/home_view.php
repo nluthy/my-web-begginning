@@ -16,7 +16,7 @@
         <meta name="GENERATOR" content="Công ty Cổ phần Bán lẻ Kỹ thuật số FPT">
 
         <?php
-        $public_folder = base_url().'public/';
+        $public_folder = base_url() . 'public/';
         ?>
         <script defer="defer" src="<?php echo $public_folder . 'js/ga.js'; ?>" async="async" type="text/javascript"></script>
         <script type="text/javascript">
@@ -137,10 +137,14 @@
 
                         <li><a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="ico-wishlist" rel="nofollow">Danh sách yêu thích</a> <a href="http://fptshop.com.vn/danh-sach-yeu-thich" class="wishlist-qty" rel="nofollow">
                                 (0)</a> </li>
-
-                        <li><a href="<?php echo base_url() . 'index.php/login'; ?>" class="ico-login" rel="nofollow">Đăng nhập</a></li>
-                        <li><a href="<?php echo base_url() . 'index.php/register'; ?>" class="ico-register" rel="nofollow">Đăng ký</a></li>
-
+                        <?php if ($user) { ?>
+                                <li><?php echo 'Xin chào '.$user['full_name']; ?></li>
+                            <?php
+                        } else {
+                            ?>
+                            <li><a href="<?php echo base_url() . 'index.php/login'; ?>" class="ico-login" rel="nofollow">Đăng nhập</a></li>
+                            <li><a href="<?php echo base_url() . 'index.php/register'; ?>" class="ico-register" rel="nofollow">Đăng ký</a></li>
+                        <?php } ?>
 
                     </ul>
                 </div>
@@ -222,7 +226,7 @@
 
             <div class="banner">
                 <div class="logo">
-                    <a href="<?php echo site_url('home');?>">
+                    <a href="<?php echo site_url('home'); ?>">
                         <img src="<?php echo $public_folder . 'img/logo.png'; ?>" class="noborder"></a>
                 </div>
                 <!------Module tìm kiếm theo catalog--->
