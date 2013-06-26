@@ -699,7 +699,7 @@ td.title{width:101px}
 .google{background-position:0 0}
 .yahoo{background-position:-67px 0}
 .required{color:Red}
-div#openid_btns{margin-left:70px !important}
+div#openid_btns{margin-left:10px !important}
 /*==TOOLTIP==*/.mytooltip{background:none repeat scroll 0 0 #FCFCFC;border:1px solid #E6BCA5;border-radius:9px;color:#59595b;font-family:arial,helvetica,serif;line-height:20px;padding:12px;width:277px;z-index:9999}
 .mytooltip .tipname{font-size:14px;font-style:normal;text-transform:uppercase;padding-left:12px}
 .mytooltip .line{background-color:#ddd;border:0 none;height:1px;color:#ddd}
@@ -1565,9 +1565,9 @@ input.textBox:focus{padding:3px 5px;color:#373737;font-style:normal}
 .typeInfo .field-validation-error{float:none !important}
 .popuptragop .titlepopuptragop{background-color:#F3F2F2;color:#AD5656;font-size:18px;font-weight:bold;height:50px;margin-left:-10px;margin-top:-10px;text-align:center;width:512px}
 /*===LOGIN EDIT====*/.swrapper{margin:0 auto;font-size:14px;border-radius:5px;width:1006px;padding-top:47px}
-.swrapperBg{background:url(http://localhost:81/CodeIgniterBeginning/public/img/wrapperBg.png) no-repeat;width:1006px;height:319px;position:absolute;top:-8px;left:87px}
+.swrapperBg{width:1006px;height:319px;position:absolute;top:-8px;left:87px}
 .slogo{background:url(http://localhost:81/CodeIgniterBeginning/public/img/logoBig.png) no-repeat;width:500px;height:348px;margin:auto 0;position:relative}
-.sline{background:url(http://localhost:81/CodeIgniterBeginning/public/img/sline.png) no-repeat;width:2px;height:522px;float:left}
+.sline{width:2px;height:522px;float:left}
 .rightColContent{float:right;width:460px;position:relative}
 .leftColContent{float:left;width:524px;min-height:100px}
 .topBtn{width:200px;height:100px;background:url(http://localhost:81/CodeIgniterBeginning/public/img/logoLogin.png) no-repeat;position:relative}
@@ -1577,7 +1577,7 @@ input.textBox:focus{padding:3px 5px;color:#373737;font-style:normal}
 .btnAreaText{float:right;text-align:right}
 .btnAreaText a{text-decoration:none;color:#d41212}
 .btnAreaText a:hover{text-decoration:underline}
-.btnLoginV3{background:url(http://localhost:81/CodeIgniterBeginning/public/img/btnLoginV3.png) no-repeat;width:149px;height:28px;border:none;cursor:pointer;margin-left:6px;float:left}
+.btnLoginV3{background:url(http://localhost:81/CodeIgniterBeginning/public/img/btnLoginV3.png) no-repeat;width:153px;height:35px;border:none;cursor:pointer;margin-left:6px;float:left}
 .btnLoginV3:hover{background:url(http://localhost:81/CodeIgniterBeginning/public/img/btnLoginV3hover.png) no-repeat}
 .redBtn1{background:url(http://localhost:81/CodeIgniterBeginning/public/img/redBtn1.png) no-repeat;width:168px;height:35px;border:none;cursor:pointer;margin-left:-5px;float:left}
 .redBtn1:hover{background:url(http://localhost:81/CodeIgniterBeginning/public/img/redBtn1hover.png) no-repeat}
